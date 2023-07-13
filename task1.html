@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Task-1</title>
+  <style>
+    #full-sec {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #left-container {
+      width: 24.5%;
+      background-color: grey;
+    }
+
+    #right-container {
+      width: 74.5%;
+      background-color: lightgoldenrodyellow;
+    }
+
+    #left-container,
+    #right-container {
+      height: 100%;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      #full-sec {
+        flex-direction: column;
+      }
+
+      #left-container {
+        height: 24.5%;
+      }
+
+      #right-container {
+        height: 74.5%;
+      }
+
+      #left-container,
+      #right-container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="full-sec">
+    <div id="left-container">
+      <p>Left</p>
+    </div>
+    <div id="right-container">
+      <p>Right</p>
+    </div>
+  </section>
+</body>
+
+</html>
