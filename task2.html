@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Task-2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    .master-container {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+    }
+
+    .div1 {
+      background-color: rgb(146, 7, 30);
+      width: 50%;
+    }
+
+    .right-col-container {
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div2 {
+      background-color: goldenrod;
+      height: 50%;
+    }
+
+    .rightcol-lowerrow-container {
+      display: flex;
+      height: 50%;
+    }
+
+    .div3 {
+      background-color: violet;
+      width: 50%;
+    }
+
+    .div4 {
+      background-color: grey;
+      width: 50%;
+    }
+
+    .master-container,
+    .right-col-container,
+    .rightcol-lowerrow-container {
+      gap: 1rem;
+    }
+
+    @media screen and (max-width: 576px) {
+
+      .master-container,
+      .left-col-container,
+      .right-col-container,
+      .rightcol-lowerrow-container {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .div1,
+      .div2,
+      .div3,
+      .div4 {
+        width: 100vw;
+        height: 25vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="master-container">
+    <div class="left-col-container div1">
+      <p>1</p>
+    </div>
+
+    <div class="right-col-container">
+      <div class="div2">
+        <p>2</p>
+      </div>
+
+      <div class="rightcol-lowerrow-container">
+        <div class="div3">
+          <p>3</p>
+        </div>
+
+        <div class="div4">
+          <p>4</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
