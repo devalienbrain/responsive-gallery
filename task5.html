@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive contents</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+      border: 2px solid goldenrod;
+      padding: 10px;
+      margin-right: 0 auto;
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .content,
+    .image-container {
+      flex: 1;
+      padding: 10px;
+    }
+
+    @media screen and (max-width: 576px) {
+      .container {
+        display: block;
+      }
+
+      #mobile-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="test-img.jpg" alt="alt">
+    </div>
+    <div class="content">
+      <h2>Hello Sisters</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet esse est magni laborum, at quo quaerat velit
+        excepturi atque rerum praesentium deserunt fuga odio vitae neque ad quisquam reprehenderit commodi.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet esse est magni laborum, at quo quaerat velit
+        excepturi atque rerum praesentium deserunt fuga odio vitae neque ad quisquam reprehenderit commodi.</p>
+    </div>
+  </div>
+
+  <div class="container" id="mobile-reverse">
+    <div class="content">
+      <h2>Hello Brothers</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet esse est magni laborum, at quo quaerat velit
+        excepturi atque rerum praesentium deserunt fuga odio vitae neque ad quisquam reprehenderit commodi.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet esse est magni laborum, at quo quaerat velit
+        excepturi atque rerum praesentium deserunt fuga odio vitae neque ad quisquam reprehenderit commodi.</p>
+    </div>
+    <div class="image-container">
+      <img src="test-img.jpg" alt="alt">
+    </div>
+  </div>
+</body>
+
+</html>
